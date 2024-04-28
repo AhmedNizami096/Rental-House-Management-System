@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>Tenant Info</title>
+    <link rel="stylesheet" href="payment.css">
+  </head>
+  <body class="homee">
+    <header>
+      <h1><u>Tenant Info</u></h1>
+    </header>
+    <main>
+      <form class="info" action="/payment/process" method="post">
+      <h2>Information:</h2>
+      <input type="text" name="name" placeholder="Name">
+      <input type="text" name="ID" placeholder="ID">
+      <input type="text" name="NID_no." placeholder="NID No.">
+      <input type="text" name="DOB" placeholder="DOB">
+      <input type="text" name="occupation" placeholder="Occupation">
+      <input type="text" name="permanent_address" placeholder="Permanent Address">
+      <select name="status">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+      <select name="status">
+        <option value="active">Active</option>
+        <option value="inactive">Inactive</option>
+      </select>
+      <input type="submit" name="action" value="Submit">
+      </form>
+    </main>
+  </body>
+</html>

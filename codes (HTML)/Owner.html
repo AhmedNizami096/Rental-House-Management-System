@@ -1,0 +1,32 @@
+<html>
+	<html lang="en">
+  <head>
+    <title>Owner</title>
+    <link rel="stylesheet" href="payment.css">
+  </head>
+  <body class="homee">
+    <header>
+      <h1><u>Owner Action</u></h1>
+    </header>
+    <main>
+      <a class="info" action="/payment/process" method="post">
+      <h2>Information:</h2>
+      <a href="file:///D:/2-2/D.B.M.S/Sessional/Rental%20House%20Management%20System/tenant_profile.html">
+      <input type="submit" name="action" value="Info">
+      <a href="file:///D:/2-2/D.B.M.S/Sessional/Rental%20House%20Management%20System/House%20info.html">
+      <input type="submit" name="action" value="Add House Info">
+      <a href="file:///D:/2-2/D.B.M.S/Sessional/Rental%20House%20Management%20System/Apartment%20Info.html">
+      <input type="submit" name="action" value="Add Apartment Info">
+      <a href="file:///D:/2-2/D.B.M.S/Sessional/Rental%20House%20Management%20System/Company%20Services.html">
+      <input type="submit" name="action" value="Company Services">
+      <a href="file:///D:/2-2/D.B.M.S/Sessional/Rental%20House%20Management%20System/Contract.html">
+      <input type="submit" name="action" value="Contract">
+      
+      </form>
+      <span sec:authorize="isAuthenticated">
+        <a th:href="@{/logout}">Logout</a> 
+        </span>
+    </main>
+    
+  </body>
+</html>

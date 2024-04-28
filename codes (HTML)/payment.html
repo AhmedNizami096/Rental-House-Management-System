@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Payment Form</title>
+        <link rel="stylesheet" href="payment.css">
+    </head>
+    <body class="homee">
+        <header>
+            <h1><u>Payment Form</u></h1>
+        </header>
+        <main>
+            <form class="info" action="/payment/process" method="post">
+            <h2>Information:</h2>
+            <input type="text" name="advance_amount" placeholder="Advance Amount">
+            <input type="text" name="total_amount" placeholder="Total Amount">
+            <input type="date" name="bill_date" placeholder="Bill Date">
+            <input type="text" name="biller_id" placeholder="Biller ID">
+            <select name="method">
+                <option value="credit_card">Credit Card</option>
+                <option value="debit_card">Debit Card</option>
+                <option value="net_banking">Net Banking</option>
+            </select>
+            <select name="status">
+                <option value="paid">Paid</option>
+                <option value="pending">Pending</option>
+            </select>
+            <input type="text" name="due_amount" placeholder="Due Amount">
+            <input type="submit" value="Submit" >
+            </form>
+        </main>
+    </body>
+</html>

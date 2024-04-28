@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>Contract Info</title>
+    <link rel="stylesheet" href="payment.css">
+  </head>
+  <body class="homee">
+    <header>
+      <h1><u>Contract</u></h1>
+    </header>
+    <main>
+      <form class="info" action="/payment/process" method="post">
+      <h2>Information:</h2>
+      <input type="text" name="contract_ID" placeholder="Contract ID">
+      <input type="text" name="owner_ID" placeholder="Owner ID">
+      <input type="text" name="house_ID" placeholder="House ID">
+      <input type="text" name="tenant_ID" placeholder="Tenant ID">
+      <input type="text" name="apartment_ID" placeholder="Apartment ID">
+      <input type="text" name="date_of_signing" placeholder="Date of Signing">
+      <input type="text" name="start_of_contact" placeholder="Start of Contract">
+      <input type="text" name="end_of_contract" placeholder="End of Contract">
+      <input type="text" name="rent_per_terms" placeholder="Rent per terms">
+      <select name="status">
+        <option value="Present">Present</option>
+        <option value="past">Past</option>
+        <option value="future">Future</option>
+      </select>
+      <input type="submit" name="action" value="Submit">
+      </form>
+    </main>
+  </body>
+</html>
